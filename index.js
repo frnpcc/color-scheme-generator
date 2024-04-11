@@ -18,7 +18,7 @@ document.getElementById('select-color').addEventListener('submit', function(e){
       id="color-${index + 1}"
       src="${color.image.bare}"
       alt="image for color ${color.name.value}">
-      <span id="hex-${index + 1}">${color.hex.value}</span>
+      <span class="hex-value" id="hex-${index + 1}">${color.hex.value}</span>
       `)
 
       renderColorScheme(colorsHtml)
@@ -31,3 +31,11 @@ function renderColorScheme(html) {
   document.getElementById('colors-container').innerHTML = html
 
 }
+
+document.addEventListener('click', function(e){
+
+  if (e.target.className === 'hex-value'){
+    navigator.clipboard.writeText(e.target.innerText)
+  }
+
+})
