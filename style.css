@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+}
+
+/* typography */
+
+body, select, button {
+  font-family: "Inter", sans-serif;
+}
+
+/* form */
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 23px 14px;
+}
+
+#color-hex {
+  width: 61px;
+  height: 42px;
+  border: .5px solid #D1D5DB;
+  background-color: #E5E5E5;
+}
+
+select, button, #color-hex {
+  cursor: pointer;
+}
+
+select {
+  width: 382px;
+  height: 42px;
+  border-radius: 6px;
+  color: #111827;
+  font-size: 1rem;
+  padding: .562em .812em;
+}
+
+button, select {
+  border: 1px solid #D1D5DB;
+}
+
+button {
+  padding: 1.08em .92em;
+  border-radius: 4px;
+  background: none;
+}
+
+button, span {
+  font-size: .75rem;
+  font-weight: 500;
+}
+
+/* main */
+
+span {
+  color: #2B283A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#colors-container {
+  width: 100vw;
+  height: 88vh;
+  display: grid;
+  grid-template-areas:
+  'col1 col2 col3 col4 col5'
+  'hex1 hex2 hex3 hex4 hex5';
+  grid-template-rows: 1fr 46px;
+}
+
+#colors-container img {
+  height: 100%;
+  width: 100%;
+}
+
+#color-1 {
+  grid-area: col1;
+}
+#color-2 {
+  grid-area: col2;
+}
+#color-3 {
+  grid-area: col3;
+}
+#color-4 {
+  grid-area: col4;
+}
+#color-5 {
+  grid-area: col5;
+}
+
+#hex-1 {
+  grid-area: hex1;
+}
+#hex-2 {
+  grid-area: hex2;
+}
+#hex-3 {
+  grid-area: hex3;
+}
+#hex-4 {
+  grid-area: hex4;
+}
+#hex-5 {
+  grid-area: hex5;
+}
