@@ -24,7 +24,7 @@ form {
   background-color: #E5E5E5;
 }
 
-select, button, #color-hex {
+select, button, #color-hex, .hex-value {
   cursor: pointer;
 }
 
